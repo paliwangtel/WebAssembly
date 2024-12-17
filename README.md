@@ -16,3 +16,9 @@ Ini adalah aplikasi web yang menggunakan WebAssembly untuk menjalankan fungsi ya
 
 ## Hasil
 Setelah menjalankan aplikasi, Anda akan melihat hasil penjumlahan di console browser.
+
+
+Mengompilasi Kode C Menjadi WebAssembly Untuk mengompilasi kode C ke WebAssembly, kita membutuhkan Emscripten, sebuah toolchain untuk mengompilasi C/C++ ke dalam WebAssembly.
+```
+emcc wasm/add.c -s WASM=1 -o wasm-build/add.wasm
+```
